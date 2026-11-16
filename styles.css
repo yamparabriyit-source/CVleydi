@@ -176,4 +176,33 @@ h1 {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+.descargar-container {
+    text-align: center;
+    padding: 25px;
+}
+
+.descargar-container button {
+    background: linear-gradient(135deg, #d6a83e, #f5dc91);
+    color: #171717;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.descargar-container button:hover {
+    background: #c49328;
+}
+
+@media print {
+    .descargar-container {
+        display: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
 }
